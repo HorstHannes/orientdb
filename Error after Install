@@ -1,0 +1,22 @@
+While using this tutorial onto Ubuntu 14.04
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-orientdb-on-an-ubuntu-12-04-vps
+
+cd ../releases/orientdb*
+---> orientdb/graphdb/target/databases/GratefulDeadConcerts does not exist.
+The database is not transfered and not in the OrientDb Folder
+
+cd bin                      <-- found server.sh in the server/script folder
+./server.sh &
+---> Results in Error: Could not find or load main class com.orientechnologies.orient.server.OServerMain
+
+The OServerMain.class is stored in
+/orientdb/server
+/orientdb/server/config
+/orientdb/server/target/classes/com/orientechnologies/orient/server
+
+The OServerMain.java is stored in
+/orientdb/server/src/main/java/com/orientechnolgies/orient/server
+
+So where is the Problem?
+
+I reinstalled the whole Linux System and it is not workin even after following the tutorial for each step.
